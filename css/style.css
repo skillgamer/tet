@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+.topbar {
+  text-align: right;
+  margin-top: 1%;
+  margin-right: 3.2%;
+}
+.topbar .link {
+  display: inline;
+  padding-right: 2%;
+}
+.topbar .link a {
+  text-decoration: none;
+  color: gray;
+  position: relative;
+  font-size: 20px;
+}
+/*
+.topbar li a:hover{
+    text-decoration: underline;
+}*/
+.topbar .link a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(206, 201, 201);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.topbar .link a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.topbar li .Dbtn {
+  background: none;
+  background-image: url(../img/night.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
+  opacity: 1;
+  animation-name: moonD; /*delay iteration-count direction fill-mode*/
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.topbar li .Dbtn:hover {
+  animation-name: moonDB; /*delay iteration-count direction fill-mode*/
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  border: none;
+}
+.topbar li .Wbtn {
+  background: none;
+  background-image: url(../img/night.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
+  opacity: 1;
+  animation-name: moonDB; /*delay iteration-count direction fill-mode*/
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.topbar li .Wbtn:hover {
+  animation-name: moonD; /*delay iteration-count direction fill-mode*/
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border: none;
+}
+@keyframes moonD {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    background-image: url(../img/nightD.png);
+  }
+}
+@keyframes moonDB {
+  from {
+    opacity: 1;
+    background-image: url(../img/nightD.png);
+  }
+  to {
+    opacity: 1;
+    background-image: url(../img/night.png);
+  }
+}
+.dark {
+  animation: BackgroundDark 0.6s forwards;
+}
+@keyframes BackgroundDark {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #1f2129;
+  }
+}
+.white {
+  animation: BackgroundWhite 0.6s forwards;
+}
+@keyframes BackgroundWhite {
+  from {
+    background-color:#1f2129;
+  }
+  to {
+    background-color: white;
+  }
+}
+.erstesBild {
+  margin-top: 1%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  text-align: center;
+}
+.media {
+  position: relative;
+  top: 50px;
+}
+.media a img {
+  transform: scale(1);
+}
+.media a img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+.media a img {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.fotos {
+  text-align: center;
+  margin-top: 10%;
+  max-width: 100%;
+}
+.BildUndButton {
+  max-width: 33.333%;
+  display: inline;
+  padding-left: 0.8%;
+}
+
+.uContainer {
+  width: 47.4%;
+
+  height: 80vh;
+  background-color: rgb(196, 196, 196);
+  float: left;
+}
+.uImage {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/leio-mclaren-leiomclaren-com-ImhjEeh7pZg-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.uText {
+  text-align: center;
+  background-color: rgb(196, 196, 196);
+  float: right;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  width: 100%;
+}
+.uText h1 {
+  font-size: 2vw;
+}
+.uText h2 {
+  font-size: 1vw;
+}
+#title {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}

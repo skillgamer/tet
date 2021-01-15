@@ -1,0 +1,52 @@
+
+.fotos button{
+    height: 640px;
+    background: none;
+    border: none;
+}
+
+.fotos button:active{
+    border: 0px solid black;
+    background:none;
+    border-style: solid;
+    outline: none;
+}
+.fotos button:focus{
+    border: none;
+    background:none;
+    border-style: solid;
+    outline: none;
+}
+.BildButton{
+    position: absolute;
+    color: gray;
+}
+
+
+.BildUndButton1{
+    width: 33.3333%;
+  
+    background-image: url(img/1.jpg);
+    background-size: 20px;
+    
+   
+    
+}
+.BildUndButton2{
+    width: 33.3333%;
+  
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    
+   
+    
+}
+.BildUndButton3{
+    width: 33.3333%;
+  
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    
+   
+    
+}
